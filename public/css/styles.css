@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+header {
+  background-color: var(--amarillo);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#img-principal {
+  width: 70%;
+}
+
+#barra-busqueda {
+  padding: 10px 0 10px 0;
+}
+
+#subT-header {
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+#subT-header > h3 {
+  font-size: 15px;
+  width: 80%;
+  padding: 5px;
+}
+
+#ul1-nav {
+  padding: 10px 0 10px 0;
+}
+
+#ul2-nav {
+  padding: 10px 0 10px 0;
+}
+
+#ul2-nav > li > a {
+  padding-right: 3px;
+}
+
+#menu {
+  text-align: center;
+}
+
+#btn-menu {
+  background-color: var(--celeste);
+  width: 15%;
+  height: 2.5rem;
+  border-radius: 15%;
+}
+.barras {
+  font-size: 2rem;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.precio {
+  font-size: 18px;
+}
+.descuento .descripciones {
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+}
