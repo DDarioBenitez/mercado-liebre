@@ -25,14 +25,16 @@ body {
 
 .header-primero {
   background-color: var(--amarillo) !important;
-  padding: 1.5rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -41,23 +43,49 @@ main {
 .header-nav {
   display: none;
 }
-#img-principal {
-  width: 70%;
+#header-logo-barra {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
+#header-logo-barra > img {
+  width: 50%;
+}
 #barra-busqueda {
-  padding: 10px 0 10px 0;
+  background-color: white;
+  border-radius: 8px;
+  height: 2rem;
+  padding-left: 0.3rem;
+  text-align: center;
+  vertical-align: middle;
+  width: 45%;
 }
-
+#barra-busqueda > input {
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+#barra-busqueda > button {
+  width: 15%;
+  border: none;
+  font-size: 15px;
+  color: var(--gris-oscuro);
+  background-color: transparent;
+}
 #subT-header {
   display: flex;
   padding: 10px 0 10px 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 #subT-header > h3 {
   font-size: 12px;
   padding: 5px;
+  font-weight: normal;
 }
-
 #menu {
   text-align: center;
 }
@@ -69,16 +97,16 @@ main {
   border-radius: 15%;
 }
 .barras {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
-.banner {
-  width: 100vw;
+.banner img {
+  width: 100%;
 }
-
 h2 {
   font-size: 24px;
+  color: var(--gris-oscuro);
 }
 
 .precio {
@@ -89,6 +117,9 @@ h2 {
 }
 .descuento {
   color: var(--verde);
+}
+.nombre {
+  width: 100%;
 }
 .truck {
   color: var(--verde);
@@ -101,6 +132,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: -15px;
 }
 
 .ultima-visita {
@@ -133,8 +167,20 @@ h2 {
   border-top: solid 1px var(--gris-claro);
   width: 100%;
   padding: 5px 15px 15px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
+.parrafos-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nombre {
+  font-weight: bolder;
+  color: var(--gris-oscuro);
+}
 ul {
   list-style-type: none;
 }
@@ -145,8 +191,11 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
-
+footer > h5 {
+  color: var(--gris-oscuro);
+}
 footer > div > p {
   font-size: 12px;
   color: var(--gris-oscuro);
@@ -173,15 +222,44 @@ footer i {
   #menu {
     display: none;
   }
+  #header-logo-barra {
+    align-items: center;
+    justify-content: space-around;
+  }
+  #header-logo-barra img {
+    width: 32%;
+  }
+  #barra-busqueda {
+    width: 28%;
+  }
+  #subT-header {
+    width: 35%;
+  }
   .header-nav {
-    display: block;
+    display: inline-flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
   #ul1-nav {
-    padding: 10px 0 10px 0;
+    width: 48%;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: start;
+    color: black;
   }
 
   #ul2-nav {
-    padding: 10px 0 10px 0;
+    width: 47%;
+    padding: 10px 10px 10px 0;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: end;
+    color: black;
   }
 
   #ul2-nav > li > a {
@@ -190,5 +268,79 @@ footer i {
   #subT-header {
     align-items: center;
     justify-content: center;
+  }
+  .ultima-visita h2 {
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .ofertas h2 {
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .card {
+    width: 45%;
+  }
+
+  .ultima-visita {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ofertas {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer > div {
+    width: 45%;
+  }
+  footer > h5 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header-logo-barra img {
+    width: 35%;
+  }
+  #barra-busqueda {
+    width: 30%;
+  }
+  #subT-header {
+    width: 25%;
+  }
+  .card {
+    width: 22%;
+  }
+  .ultima-visita h2 {
+    padding-left: 10px;
+  }
+  .ofertas h2 {
+    padding-left: 10px;
+  }
+  .card-text {
+    padding-top: 1rem !important;
+  }
+  .nombre {
+    font-size: 1rem;
+  }
+  footer > div {
+    width: 31%;
+  }
+  footer > div > p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  #subTheader {
+    font-size: 1.5rem;
   }
 }
