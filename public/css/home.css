@@ -1,0 +1,137 @@
+.home-main img {
+  max-width: 100%;
+}
+
+.home-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--gris-oscuro);
+}
+
+.precio {
+  font-size: 18px;
+}
+.descuento .descripciones {
+  font-size: 16px;
+}
+.descuento {
+  color: var(--verde);
+}
+.nombre {
+  width: 100%;
+}
+.truck {
+  color: var(--verde);
+  border-radius: 50%;
+  border-color: var(--verde);
+  border: solid 1px;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: -15px;
+}
+
+.ultima-visita {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.ultima-visita h2 {
+  text-align: center;
+}
+.ofertas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.ofertas h2 {
+  text-align: center;
+}
+.card {
+  width: 100%;
+  padding-top: 15px;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+}
+
+.card > div {
+  border-top: solid 1px var(--gris-claro);
+  width: 100%;
+  padding: 5px 15px 15px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.parrafos-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nombre {
+  font-weight: bolder;
+  color: var(--gris-oscuro);
+}
+ul {
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .ultima-visita h2 {
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .ofertas h2 {
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+  }
+  .card {
+    width: 45%;
+  }
+
+  .ultima-visita {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ofertas {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 22%;
+  }
+  .ultima-visita h2 {
+    padding-left: 10px;
+  }
+  .ofertas h2 {
+    padding-left: 10px;
+  }
+  .card-text {
+    padding-top: 1rem !important;
+  }
+  .nombre {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+.btn-login {
+  background-color: var(--azul) !important;
+}
+.btn-login:hover {
+  background-color: #0c57a8 !important;
+}
+
+.banner-desc {
+  display: none;
+}
