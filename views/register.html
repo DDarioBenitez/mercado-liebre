@@ -64,34 +64,34 @@
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputFirstName4" class="visually-hidden">Nombre</label>
-                <input type="text" class="form-control" id="inputFirstName4" placeholder="Nombre">
+                <input type="text" class="form-control" id="inputFirstName4" placeholder="Nombre" required>
             </div>
             <div class="col-md-6">
                 <label for="inputLastName4" class="visually-hidden">Apellido</label>
-                <input type="text" class="form-control" id="inputLastName4" placeholder="Apellido">
+                <input type="text" class="form-control" id="inputLastName4" placeholder="Apellido" required>
             </div>
             <div class="col-md-6">
                 <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
                 <div class="input-group">
                     <div class="input-group-text">@</div>
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username" required>
                 </div>
             </div>
             <div class="col-md-6">
                 <label for="inputEmail4" class="visually-hidden">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="visually-hidden">Direccion</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Direccion" required>
             </div>
             <div class="col-md-6">
                 <label for="inputDate" class="visually-hidden">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" id="inputDate" placeholder="DD/MM/AAAA">
+                <input type="date" class="form-control" id="inputDate" placeholder="DD/MM/AAAA" required>
             </div>
             <div class="col-md-6">
                 <label for="inputTipoDeUsuario" class="visually-hidden">Usuario</label>
-                <select id="inputTipoDeUsuario" class="form-select">
+                <select id="inputTipoDeUsuario" class="form-select" required>
                     <option selected>Usuario</option>
                     <option value="Vendedor">Vendedor</option>
                     <option value="Comprador">Comprador</option>
@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-6">
                 <label for="inputInteres" class="visually-hidden">Categoria</label>
-                <select id="inputInteres" class="form-select">
+                <select id="inputInteres" class="form-select" required>
                     <option selected>Categorias</option>
                     <option value="Electro">Electro</option>
                     <option value="Moda">Moda</option>
@@ -114,16 +114,17 @@
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="visually-hidden">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" required>
             </div>
 
             <div class="col-md-6">
                 <label for="inputPassword4" class="visually-hidden">Confirmar contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmar contraseña">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmar contraseña"
+                    required>
             </div>
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         <a href="#"
                             class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Aceptas
@@ -138,7 +139,7 @@
                 </div>
 
                 <div class="col-2">
-                    <button type="button" class="btn btn-secondary">Limpiar</button>
+                    <button type="clear" class="btn btn-secondary">Limpiar</button>
                 </div>
             </div>
         </form>
