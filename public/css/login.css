@@ -2,7 +2,7 @@
   background-color: var(--azul) !important;
 }
 .btn-login:hover {
-  background-color: #0c57a8 !important;
+  background-color: var(--azul-2) !important;
 }
 
 .banner-desc {

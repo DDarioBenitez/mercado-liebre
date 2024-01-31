@@ -6,6 +6,7 @@ footer {
   align-items: center;
   gap: 10px;
   width: 100%;
+  text-align: center;
 }
 footer > h5 {
   color: var(--gris-oscuro);
@@ -30,8 +31,11 @@ footer i {
   font-size: 2rem;
   color: var(--celeste);
   padding: 5px;
+  transition: color 0.5s;
 }
-
+footer i:hover {
+  color: var(--verde);
+}
 @media (min-width: 768px) {
   footer {
     flex-direction: row;
